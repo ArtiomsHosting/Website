@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./src/ah_dark.png">
+    <link rel="stylesheet" href="index.css">
 
 
     <title>AH | ArtiomsHosting</title>
@@ -14,68 +16,142 @@
     <script type="text/javascript" src="./tailwind.config.js"></script>
     <script src="https://kit.fontawesome.com/5d5e2f5388.js" crossorigin="anonymous"></script>
 </head>
+
 <body class="bg-bg text-default_text">
     <header class="z-50 sticky top-0 w-full h-[80px] bg-header-bg border-b-2 border-red-600">
         <div class="max-w-[1200px] h-full m-auto w-[80%] flex">
             <div class="h-[100%] w-[80px] items-center flex">
                 <img src="./src/ah_white.png" class="m-auto w-full">
             </div>
-            <div class="h-full w-[245px] font-medium justify-center items-center flex text-[30px] font-sans hover:text-[32px] duration-100 min_header:text-[25px] min_header:hover:text-[28px] phone:text-[22px] phone:hover:text-[22px] ">ArtiomsHosting</div>
+            <div
+                class="h-full w-[245px] font-medium justify-center items-center flex text-[30px] font-sans hover:text-[32px] duration-100 min_header:text-[25px] min_header:hover:text-[28px] phone:text-[22px] phone:hover:text-[22px] ">
+                ArtiomsHosting</div>
             <div class="text-lg flex justify-end w-flex flex-auto">
-                <a href="#" class="items-center flex p-[20px] hover:bg-header-text_bg hover:text-header-text_color_hover duration-100 med_header:hidden">Home</a>
-                <a href="#" class="items-center flex p-[20px] hover:bg-header-text_bg hover:text-header-text_color_hover duration-100 med_header:hidden">Status</a>
-                <a href="#" class="items-center flex p-[20px] hover:bg-header-text_bg hover:text-header-text_color_hover duration-100 med_header:hidden">Features</a>
+                <a href="#"
+                    class="items-center flex p-[20px] hover:bg-header-text_bg hover:text-header-text_color_hover duration-100 med_header:hidden">Home</a>
+                <a href="#"
+                    class="items-center flex p-[20px] hover:bg-header-text_bg hover:text-header-text_color_hover duration-100 med_header:hidden">Status</a>
+                <a href="#"
+                    class="items-center flex p-[20px] hover:bg-header-text_bg hover:text-header-text_color_hover duration-100 med_header:hidden">Features</a>
                 <div class="ml-5 items-center h-full w-[190px] text-base flex min_header:hidden">
-                    <a href="#" class="p-3 py-2 mr-1.5 rounded-xl hover:bg-header-text_bg hover:text-header-text_color_hover">Panel</a>
-                    <a href="#" class="px-3 py-2 rounded-xl bg-red-700 hover:bg-red-800 text-header-text_color_oposite"><i class="fa-brands fa-discord"></i> Discord </a>
+                    <a href="#"
+                        class="p-3 py-2 mr-1.5 rounded-xl hover:bg-header-text_bg hover:text-header-text_color_hover">Panel</a>
+                    <a href="#"
+                        class="px-3 py-2 rounded-xl bg-red-700 hover:bg-red-800 text-header-text_color_oposite"><i
+                            class="fa-brands fa-discord"></i> Discord </a>
                 </div>
-                <p class="hidden med_header:block items-center flex py-[22px] text-[26px] "><i class="fa-solid fa-bars hover:cursor-pointer" onClick="OpenMenu()"></i></p>
+                <p class="hidden med_header:block items-center flex py-[22px] text-[26px] "><i
+                        class="fa-solid fa-bars hover:cursor-pointer" onClick="OpenMenu()"></i></p>
             </div>
         </div>
-        <div class="z-50 w-full h-[0px] absolute flex flex-col bg-header-bg mt-[2px] justify-center mt-.5 overflow-hidden duration-300" id="slidedownbar">
-            <a href="#" class="w-full p-[20px] m-2 text-center text-xl rounded-xl hover:bg-gray-100 hover:text-black">Home</a>
-            <a href="#" class="w-full p-[20px] m-2 text-center text-xl rounded-xl hover:bg-gray-100 hover:text-black">Courses</a>
-            <a href="#" class="w-full p-[20px] m-2 text-center text-xl rounded-xl hover:bg-gray-100 hover:text-black">Contact</a>
-            <a href="#" class="w-full p-[20px] m-2 text-center text-xl rounded-xl hover:bg-gray-100 hover:text-black">Apply</a>
+        <div class="z-50 w-full h-[0px] absolute flex flex-col bg-header-bg mt-[2px] justify-center mt-.5 overflow-hidden duration-300"
+            id="slidedownbar">
+            <a href="#"
+                class="w-full p-[20px] m-2 text-center text-xl rounded-xl hover:bg-gray-100 hover:text-black">Home</a>
+            <a href="#"
+                class="w-full p-[20px] m-2 text-center text-xl rounded-xl hover:bg-gray-100 hover:text-black">Courses</a>
+            <a href="#"
+                class="w-full p-[20px] m-2 text-center text-xl rounded-xl hover:bg-gray-100 hover:text-black">Contact</a>
+            <a href="#"
+                class="w-full p-[20px] m-2 text-center text-xl rounded-xl hover:bg-gray-100 hover:text-black">Apply</a>
             <div class="items-center m-2 justify-center h-full w-full text-base hidden min_header:flex">
-                <a href="#" class="p-3 py-2 mr-1.5 rounded-xl hover:bg-header-text_bg hover:text-header-text_color_hover">Panel</a>
-                <a href="#" class="px-3 py-2 rounded-xl bg-red-700 hover:bg-red-800 text-header-text_color_oposite"><i class="fa-brands fa-discord"></i> Discord </a>
+                <a href="#"
+                    class="p-3 py-2 mr-1.5 rounded-xl hover:bg-header-text_bg hover:text-header-text_color_hover">Panel</a>
+                <a href="#" class="px-3 py-2 rounded-xl bg-red-700 hover:bg-red-800 text-header-text_color_oposite"><i
+                        class="fa-brands fa-discord"></i> Discord </a>
             </div>
         </div>
     </header>
-    <div class="h-[600px] bg-[#021a74] bg-cover bg-left bg-no-repeat border-b-4 border-red-600 phone:h-[300px]" style="background-image: url('./src/bg.jpg')">
+    <div class="h-[600px] bg-[#021a74] bg-cover bg-left bg-no-repeat border-b-4 border-red-600 phone:h-[300px]"
+        style="background-image: url('./src/bg.jpg')">
         <div class="relative w-[1200px] h-full m-auto max-w-[80%]">
             <p class="text-white font-medium text-4xl pt-[220px] phone:text-3xl phone:pt-[110px]">ArtiomsHosting</p>
-            <p class="text-[#e8e8e8] mt-[10px] text-[15px] phone:text-[13px]">Host your websites, discord bots, databases<br>
-                24/7 without paying any money. <a class="underline underline-offset-2 hover:cursor-pointer">Join our discord</a> Now!
+            <p class="text-[#e8e8e8] mt-[10px] text-[15px] phone:text-[13px]">Host your websites, Discord bots,
+                databases and other cool projects within 2 minutes!<br>
+                <b>24/7 without paying any money.</b> <a class="underline underline-offset-2 hover:cursor-pointer">Join
+                    our Discord</a> now!
             </p>
         </div>
     </div>
     <div class="w-[1200px] h-full m-auto max-w-[80%] flex flex-col">
         <p class="font-medium text-3xl mt-[100px] w-full text-center">Who are we?</p>
         <p class="text-lg mt-[20px] text-justify">
-            yes
+            We are a free hosting that offers a wide range of services for your websites, Discord bots, databases and
+            other cool projects. We want people to host their projects without paying any money or much downtime. We are
+            a team of dedicated developers and designers who are always working to make our services better.
         </p>
     </div>
     <div class="w-[1200px] m-auto max-w-[80%] flex flex-col my-[50px]">
         <p class="font-medium text-3xl w-full text-center">What we offer</p>
         <div class="mt-10 flex w-full h-auto justify-center flex-wrap">
-            <div class="h-[400px] w-[30%] m-3 my-5 min-w-[300px] shadow-2xl flex flex-col shadow-gray-500">
-                <div class="w-full h-[140px] text-center"><p class="fa-solid fa-book mt-[40px] bg-gray-100 rounded-[50%] text-[30px] p-6 text-black"></p></div>
-                <p class="w-full text-center text-xl font-semibold">Coding support</p>
-                <p class="mt-3 mx-8 break-words">yes</p>
+            <div
+                class="min-h-[400px] pb-8 w-[30%] m-3 my-5 min-w-[300px] shadow-2xl flex flex-col shadow-gray-500 scale-on-hover">
+                <div class="w-full h-[140px] text-center">
+                    <p class="fa-solid fa-book mt-[40px] bg-gray-100 rounded-[50%] text-[30px] p-6 text-black"></p>
+                </div>
+                <p class="w-full text-center text-xl font-semibold">Coding Support</p>
+                <p class="mt-3 mx-8 break-words">Our Discord server has lots of developers who want to share knowledge
+                    and help other people. We have multiple support channels for different kinds of languages, for
+                    example JavaScript, Python and HTML.<br>So do you need any help with your code? The ArtiomsHosting
+                    Community is there for you!</p>
             </div>
-            <div class="h-[400px] w-[30%] m-3 my-5 min-w-[300px] shadow-2xl flex flex-col shadow-gray-500">
-                <div class="w-full h-[140px] text-center"><p class="fa-solid fa-server mt-[40px] bg-gray-100 rounded-[50%] text-[30px] p-6 text-black"></p></div>
+            <div
+                class="min-h-[400px] pb-8 w-[30%] m-3 my-5 min-w-[300px] shadow-2xl flex flex-col shadow-gray-500 scale-on-hover">
+                <div class="w-full h-[140px] text-center">
+                    <p class="fa-solid fa-server mt-[40px] bg-gray-100 rounded-[50%] text-[30px] p-6 text-black"></p>
+                </div>
                 <p class="w-full text-center text-xl font-semibold">Free Hosting</p>
-                <p class="mt-3 mx-8 break-words">yes </p>
+                <p class="mt-3 mx-8 break-words">We provide free servers for everyone over the world. We want people to
+                    host their projects for free without much downtime. There's a variety of services to choose from,
+                    going all the way from Discord Bots, to databases, to Software and much more! It's easy to get
+                    started with our hosting, it'll only take you 2 minutes!</p>
             </div>
-            <div class="h-[400px] w-[30%] m-3 my-5 min-w-[300px] shadow-2xl flex flex-col shadow-gray-500">
-                <div class="w-full h-[140px] text-center"><p class="fa-solid fa-link mt-[40px] bg-gray-100 rounded-[50%] text-[30px] p-6 text-black"></p></div>
-                <p class="w-full text-center text-xl font-semibold">Free Domain proxy</p>
-                <p class="mt-3 mx-8 break-words">yes</p>
+            <div
+                class="min-h-[400px] pb-8 w-[30%] m-3 my-5 min-w-[300px] shadow-2xl flex flex-col shadow-gray-500 scale-on-hover">
+                <div class="w-full h-[140px] text-center">
+                    <p class="fa-solid fa-link mt-[40px] bg-gray-100 rounded-[50%] text-[30px] p-6 text-black"></p>
+                </div>
+                <p class="w-full text-center text-xl font-semibold">Free Domain Proxy</p>
+                <p class="mt-3 mx-8 break-words">Do you have a website hosted on ArtiomsHosting and don't want a numeric
+                    ip + port? With ArtiomsHosting, you can use your custom domain! You only have to point an A record
+                    to the reverse proxy's IP and execute a command! It's that easy! The bot will do the rest.</p>
             </div>
         </div>
     </div>
+
+    <div class="w-[1200px] m-auto max-w-[80%] flex flex-col my-[50px] mt-20">
+        <p class="font-medium text-3xl w-full text-center">idk what to put here</p>
+        <div class="mt-10 flex w-full h-auto justify-center flex-wrap">
+            <div class="min-h-[7rem] pb-8 w-[30%] m-3 my-5 min-w-[300px] flex flex-col">
+                <p class="w-full text-center text-4xl font-semibold text-red-600">323
+                    <br>
+                    <span class="text-gray-500 text-2xl">Discord Users</span>
+                </p>
+            </div>
+            <div class="min-h-[7rem] pb-8 w-[30%] m-3 my-5 min-w-[300px] flex flex-col">
+                <p class="w-full text-center text-4xl font-semibold text-red-600">251
+                    <br>
+                    <span class="text-gray-500 text-2xl">Clients</span>
+                </p>
+            </div>
+            <div class="min-h-[7rem] pb-8 w-[30%] m-3 my-5 min-w-[300px] flex flex-col">
+                <p class="w-full text-center text-4xl font-semibold text-red-600">556
+                    <br>
+                    <span class="text-gray-500 text-2xl">Servers</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-[1200px] m-auto max-w-[80%] flex flex-col my-[50px] mt-[0rem] justify-content-center">
+        <button class="font-medium text-2xl w-full text-center bg-red-600 w-[15rem] h-[5rem] mx-auto rounded-lg"
+            id="getting-started">Start using ArtiomsHosting!</button>
+        <script>
+            document.getElementById("getting-started").addEventListener("click", function () {
+                open("https://docs.artiom.host")
+            });
+        </script>
+    </div>
 </body>
-</html> 
+
+</html>
