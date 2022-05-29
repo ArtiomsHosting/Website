@@ -12,7 +12,6 @@ function ResetUI() {
 
 window.addEventListener("resize", ResetUI);
 
-
 fetch('http://n1.artiom.host:1069/data').then(response => response.json()).then(data => {
     function animateValue(element, start, end, duration) {
         let startTimestamp = null;
@@ -27,12 +26,19 @@ fetch('http://n1.artiom.host:1069/data').then(response => response.json()).then(
         window.requestAnimationFrame(step);
     }
 
-    console.log(data)
-
     const el = document.getElementById("dscusers");
     const el2 = document.getElementById("ahclients");
     const el3 = document.getElementById("ahservers");
+
     animateValue(el, 0, data.members, 2000);
     animateValue(el2, 0, data.clients, 2000);
     animateValue(el3, 0, data.servers, 2000);
+}).catch(err => {
+    const el = document.getElementById("dscusers");
+    const el2 = document.getElementById("ahclients");
+    const el3 = document.getElementById("ahservers");
+
+    el.innerHTML = "NaN";
+    el2.innerHTML = "NaN";
+    el3.innerHTML = "NaN";
 });
