@@ -42,3 +42,7 @@ fetch('http://n1.artiom.host:1069/data').then(response => response.json()).then(
     el2.innerHTML = "NaN";
     el3.innerHTML = "NaN";
 });
+
+function openahdocs() {
+    open('https://artiom.host/docs')
+}
