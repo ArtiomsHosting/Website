@@ -36,3 +36,11 @@ fetch('http://n1.artiom.host:1069/data').then(response => response.json()).then(
     animateValue(el2, 0, data.clients, 1500);
     animateValue(el3, 0, data.servers, 1500);
 });
+
+document.getElementById("getting-started").onclick(() => {
+    console.log('test')
+})
+
+function openahdocs () {
+    open('https://artiom.host/docs')
+}
