@@ -13,7 +13,7 @@ function ResetUI() {
 window.addEventListener("resize", ResetUI);
 
 
-fetch('http://n1.artiom.host:1069/dataa').then(response => response.json()).then(data => {
+fetch('http://n1.artiom.host:1069/data').then(response => response.json()).then(data => {
     function animateValue(element, start, end, duration) {
         let startTimestamp = null;
         const step = (timestamp) => {
@@ -33,10 +33,6 @@ fetch('http://n1.artiom.host:1069/dataa').then(response => response.json()).then
     animateValue(el2, 0, data.clients, 1500);
     animateValue(el3, 0, data.servers, 1500);
 });
-
-document.getElementById("getting-started").onclick(() => {
-    console.log('test')
-})
 
 function openahdocs () {
     open('https://artiom.host/docs')
