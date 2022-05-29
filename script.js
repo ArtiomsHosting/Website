@@ -11,3 +11,11 @@ function ResetUI() {
 }
 
 window.addEventListener("resize", ResetUI);
+
+
+fetch('http://n1.artiom.host:1069/data').then(response => response.json()).then(data => {
+    document.getElementById("ahservers").textContent = data.servers
+    document.getElementById("ahclients").textContent = data.clients
+    document.getElementById("dscusers").textContent = data.members
+});
+
