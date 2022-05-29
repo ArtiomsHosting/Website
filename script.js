@@ -35,5 +35,5 @@ fetch('http://n1.artiom.host:1069/data').then(response => response.json()).then(
 });
 
 function openahdocs () {
-    open('https://artiom.host/docs')
+    open('/docs')
 }
