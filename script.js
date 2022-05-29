@@ -32,7 +32,7 @@ fetch('http://n1.artiom.host:1069/data').then(response => response.json()).then(
     const el = document.getElementById("dscusers");
     const el2 = document.getElementById("ahclients");
     const el3 = document.getElementById("ahservers");
-    animateValue(el, 0, data.members, 2000);
-    animateValue(el2, 0, data.clients, 2000);
-    animateValue(el3, 0, data.servers, 2000);
+    animateValue(el, 0, data.members, 1500);
+    animateValue(el2, 0, data.clients, 1500);
+    animateValue(el3, 0, data.servers, 1500);
 });
